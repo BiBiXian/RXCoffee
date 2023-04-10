@@ -1,0 +1,85 @@
+@theme-color: #0C34BA;
+.home{
+    padding-top: 50px;
+}
+// 导航
+.nav-bar{
+    height: 50px;
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 10;
+
+    .left-title{
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 50px;
+        width: calc(45% - 10px);
+        padding-left:  10px;
+        box-sizing: border-box;
+
+        span{
+            color: @theme-color;
+        }
+    }
+
+    .right-search{
+        height: 100%;
+        width: 55%;
+
+        .van-search{
+            padding: 8px 0;
+        }
+
+        .van-search__content{
+            background-color: #f7f8fa;
+        }
+
+        .van-icon{
+            color: @theme-color;
+            font-weight: bold; 
+        }
+    }
+}
+
+// 轮播图
+.home-banner{
+    margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    
+    .van-swipe-item{
+        position: relative;
+
+        .img-name{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(255,255,255, .7);
+            height: 30px;
+            border-radius: 15px;
+            padding: 0 20px;
+            line-height: 30px;
+            color: #444;
+        }
+    }
+}
+
+// 推荐
+.hot-product{
+    padding: 0 10px;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+
+    .hot-title{
+        font-size: 18px;
+        font-weight: bold;
+        color: #444;
+        padding-top: 20px;
+    }
+
+   
+}
+  

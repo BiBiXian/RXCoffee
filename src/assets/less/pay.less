@@ -1,0 +1,79 @@
+@theme-color: #0C34BA;
+.pay{
+    padding: 50px 0;
+}
+#address-order{
+    margin: 10px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+}
+.pay-address{
+    #address-order();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .address-box{
+        width: calc(100% - 40px);
+
+        .name{
+            font-size: 16px;
+            font-weight: bold;
+            color: @theme-color;
+        }
+    
+        .tel{
+            font-size: 14px;
+            padding-left: 10px;
+            color: #999;
+        }
+    
+        .pay-address-msg{
+            font-size: 14px;
+            margin-top: 10px;
+            
+        }
+    }
+
+    .address-icon{
+        width: 30px;
+        text-align: right;
+        font-size: 20px;
+        color: #6a91ec;
+    }
+}
+
+.pay-order-box{
+    #address-order();
+
+    .order-title{
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+}
+
+.popup-title{
+    font-size: 16px;
+    padding: 15px;
+}
+.pay-address-list{
+    max-height: 400px;
+    overflow-y: auto;
+
+    .van-address-list__bottom{
+        background-color: transparent;
+    }
+
+    .van-button--block{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .van-button--danger,
+    .van-address-item .van-radio__icon--checked .van-icon{
+        background-color: @theme-color;
+        border-color: @theme-color;
+    }
+}

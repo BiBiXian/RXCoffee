@@ -1,0 +1,96 @@
+@theme-color: #0C34BA;
+.detail-info{
+    position: relative;
+    top: -40px;
+    background-color: #fff;
+    padding: 20px 15px;
+    border-radius: 30px 30px 0 0;
+
+    .name-price{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .name{
+            font-size: 18px;
+        }
+
+        .enname{
+            font-size: 14px;
+            color: #999;
+            margin-top: 5px;
+        }
+        .price{
+            font-size: 20px;
+            font-weight: bold;
+            color: @theme-color;
+        }
+
+        
+    }
+
+    .rules-item{
+        display: flex;
+        margin: 10px 0;
+        .rule-title{
+            width: 50px;
+            font-size: 16px;
+            line-height: 25px;
+        }
+        .rule-item{
+            width: 70px;
+            line-height: 25px;
+            background-color: #EBEBEB;
+            color: #444;
+            margin-right: 10px;
+            border-radius: 13px;
+            text-align: center;
+
+            &.active{
+                background-color: @theme-color;
+                color: #fff;
+            }
+        }
+    }
+
+    .count-box{
+        display: flex;
+        justify-content: space-between;
+        line-height: 50px;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        padding: 15px 0;
+        margin: 20px 0;
+
+        .count-title{
+            font-size: 18px;
+        }
+
+        .van-stepper--round .van-stepper__minus{
+            border-color: #000;
+            color: #444;
+        }
+
+        .van-stepper--round .van-stepper__plus{
+            background-color: @theme-color;
+        }
+        
+    }
+
+    .detail-desc{
+        padding-bottom: 50px;
+
+        .desc-title{
+            font-size: 18px;
+            padding: 10px 0;
+        }
+    
+        .desc{
+            color: #999;
+            margin-top: 10px;
+        }
+    }
+
+    
+}

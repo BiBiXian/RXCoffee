@@ -1,32 +1,50 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    
     <router-view/>
   </div>
 </template>
 
 <style lang="less">
+body{
+  background-color: #f5f5f5;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  font-size: 12px;
+}
+.auto-img{
+  width: 100%;
+  display: block;
+}
+.fr{
+  float: right;
+}
+.fl{
+  float: left;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.one-text{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 隐藏滚动条样式 */
+::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.van-nav-bar .van-icon{
+        color: #000;
 }
+
 </style>

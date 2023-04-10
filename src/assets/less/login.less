@@ -1,0 +1,86 @@
+@theme-color: #0C34BA;
+.login{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+}
+// 登录
+.login-box{
+    padding: 10px;
+// 导航条
+    .left-nav{
+        display: flex;
+    
+        .logo{
+            width: 36px;
+            height: 36px;
+            margin-top: 5px;
+            border-radius: 50%;
+        }
+    
+        .left-title{
+            font-weight: bold;
+            font-size: 16px;
+            margin-left: 10px;
+            line-height: 46px;
+        }
+    }
+    
+    .close-box{
+        color: @theme-color;
+        font-weight: bold;
+    }
+
+    // 表单
+    .login-form{
+        margin-top: 80px;
+        padding: 0 10px;
+
+        .form-title{
+            font-size: 32px;
+            font-weight: bold;
+            color: #444444;
+        }
+
+        .form-en-title{
+            font-size: 18px;
+            color: #838383;
+            margin-top: 20px;
+        }
+
+        .login-form-box{
+            margin-top: 50px;
+        }
+        .forgot{
+            color: #666;
+            margin-top: 20px;
+        }
+        
+    }
+}
+.van-field__label{
+    width: 70px;
+}
+.login-btn{
+    margin-top: 40px;
+}
+
+// 注册
+.popup-box{
+    min-height: 300px;
+
+    .register{
+        padding: 20px;
+
+        .register-title{
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    }
+    
+}

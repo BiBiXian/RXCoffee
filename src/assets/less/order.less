@@ -1,0 +1,71 @@
+@theme-color: #0C34BA;
+.order{
+    padding-top: 50px;
+}
+
+.order-bg{
+    height: 100px;
+    background-color: @theme-color;
+}
+
+.order-list-box{
+    margin: -40px 10px 0;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.tab-item{
+    margin: 10px 0 15px;
+    padding: 15px 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    .tab-title{
+        line-height: 35px;
+
+        .oid{
+            font-size: 16px;
+            color: #999;
+        }
+
+        .statusText{
+            font-size: 14px;
+        }
+    }
+
+    .date{
+        font-size: 12px;
+        color: #999;
+    }
+
+    .count-total{
+        line-height: 35px;
+
+        .count{
+            font-size: 14px;
+        }
+
+        .total{
+            font-size: 14px;
+            color: @theme-color;
+            font-weight: bold;
+        }
+    }
+
+    .order-btn{
+        text-align: right;
+
+        .van-button{
+            padding: 0px 10px;
+            width: 100px;
+            height: 35px;
+            line-height: 35px;
+        }
+
+        .van-button--default{
+            border: 1px solid #999;
+
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@theme-color: #0C34BA;
+.menu-search{
+
+    .van-search__content{
+        background-color: #f7f8fa;
+    }
+
+    .van-icon{
+        color: @theme-color;
+        font-weight: bold; 
+    }
+}
+
+.menu-msg{
+    background-color: #fff;
+}
+
+.menu-type{
+    display: flex;
+    overflow-x: scroll;
+
+    .type-item{
+        width: 25%;
+        flex-shrink: 0; /*防止弹性盒子对该盒子的宽度影响*/
+
+        .type-icon{
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .type-name{
+            text-align: center;
+            font-size: 14px;
+            margin-top: 5px;
+
+            &.active{
+                color: @theme-color;
+                font-weight: bold;
+            }
+        }
+    }
+}
+

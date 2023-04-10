@@ -1,0 +1,77 @@
+@theme-color: #0C34BA;
+
+.address-list-box{
+    background-color: #fff;
+    height: calc(100vh - 150px);
+    border-radius: 20px;
+    margin: 60px 10px 0;
+    overflow-y: auto;
+    
+}
+
+.address-item{
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+
+    .address-icon{
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        background-color: #c8d6f7;
+        color: @theme-color;
+        font-size: 20px;
+    }
+    .address-info{
+        padding: 0 10px;
+        width: calc(100% - 100px);
+
+        .name{
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 20px;
+        }
+
+        .phone{
+            font-size: 12px;
+            margin: 0 8px;
+            line-height: 20px;
+        }
+
+        .default{
+            color: @theme-color;
+            border: 1px solid @theme-color;
+            font-size: 10px;
+            width: 30px;
+            height: 18px;
+            line-height: 18px;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .address-detail{
+            margin-top: 5px;
+            font-size: 12px;
+        }
+    }
+
+    .edit{
+        width: 30px;
+        text-align: center;
+        font-size: 20px;
+        color: #999;
+    }
+    
+    
+}
+
+.addBtn{
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    padding: 0 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
